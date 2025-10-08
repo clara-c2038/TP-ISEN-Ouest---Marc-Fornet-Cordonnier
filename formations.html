@@ -18,14 +18,24 @@
     .header-nav { background:#e30613; flex:1; margin-left:40px; }
     .header-nav ul { list-style:none; display:flex; justify-content:space-around; margin:0; padding:0; }
     .header-nav li { flex:1; text-align:center; }
-    .header-nav a {
-      display:block; padding:14px 10px; font-size:1.2em; font-weight:bold;
-      color:#fff; text-decoration:none; transition:background .2s;
-    }
+    .header-nav a { display:block; padding:14px 10px; font-size:1.2em; font-weight:bold; color:#fff; text-decoration:none; transition:background .2s; }
     .header-nav a:hover { text-decoration:underline; }
 
-    /* ===== conteneur principal (F27 viendra ici) ===== */
+    /* ===== Contenu principal ===== */
     main { max-width:1200px; margin:2rem auto; padding:0 1rem; }
+
+    /* ===== PF — F27 : Images ===== */
+    .pf-title { font-size:2.4rem; font-weight:800; margin:1rem 0 1.5rem; }
+    .pf-grid {
+      display:flex; gap:1.5rem; flex-wrap:wrap; align-items:flex-start;
+    }
+    .pf-item {
+      flex:0 1 300px; /* 3 vignettes tiennent sur grand écran */
+    }
+    .pf-item img {
+      width:100%; height:auto; display:block; border-radius:6px;
+      box-shadow:0 2px 8px rgba(0,0,0,.1);
+    }
 
     /* ===== footer_simple ===== */
     .site-footer { background:#000; color:#fff; padding:40px 20px 20px; }
@@ -53,22 +63,39 @@
     </div>
   </header>
 
-  <!-- ===== Contenu (F27 viendra ici) ===== -->
+  <!-- ===== PF — F27 : Titre + 3 images ===== -->
   <main>
-    <!-- F27 : “Nos formations ingénieurs” + 3 images -->
+    <h1 class="pf-title">Nos formations ingénieurs</h1>
+
+    <div class="pf-grid">
+      <div class="pf-item">
+        <img
+          src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png"
+          alt="Cybersécurité">
+      </div>
+
+      <div class="pf-item">
+        <img
+          src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png"
+          alt="Développement logiciel">
+      </div>
+
+      <div class="pf-item">
+        <img
+          src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png"
+          alt="Intelligence artificielle">
+      </div>
+    </div>
   </main>
 
   <!-- ===== Footer ===== -->
   <footer class="site-footer">
     <div class="footer-container">
-      <!-- Colonne 1 : logo -->
       <div class="footer-col footer-col-logo">
         <img
           src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg"
           alt="ISEN Ouest" class="footer-logo">
       </div>
-
-      <!-- Zone titre -->
       <div class="footer-links-section">
         <p class="footer-cities">Texte à venir</p>
       </div>
