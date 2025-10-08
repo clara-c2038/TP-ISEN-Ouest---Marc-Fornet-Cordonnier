@@ -36,6 +36,17 @@
     .footer-links-section { flex:3; display:flex; flex-direction:column; }
     .footer-cities { font-size:40px; font-weight:700; text-align:left; margin:0; }
     .footer-bottom { text-align:center; padding-top:15px; background:#fff; color:#000; font-size:14px; }
+    
+    /* === Text_img (plugin) === */
+    .block-devenir { background:#fff; padding:60px 20px; }
+    .block-container { max-width:1200px; margin:0 auto; }
+    .block-title { font-size:42px; font-weight:700; color:#000; margin-bottom:40px; text-align:left; }
+    .block-columns-img { display:flex; align-items:flex-start; gap:40px; flex-wrap:wrap; }
+    .block-text { flex:1; min-width:280px; padding-left:5%; }
+    .block-text p { font-size:16px; line-height:1.7; color:#333; margin-bottom:18px; }
+    .block-image { flex:1; min-width:280px; display:flex; justify-content:center; }
+    .block-image img { max-width:100%; height:auto; border:1px solid #ddd; border-radius:6px; }
+
   </style>
 </head>
 <body>
@@ -56,8 +67,36 @@
 
   <!-- ===== Contenu de page (mettra F23) ===== -->
   <main>
-    <!-- F23 : texte + image viendront ici -->
-  </main>
+  <section class="block-devenir">
+    <div class="block-container">
+      <!-- Titre -->
+      <h1 class="block-title">Formations post-bac</h1>
+
+      <!-- Deux colonnes : texte + image -->
+      <div class="block-columns-img">
+        <div class="block-text">
+          <p>Chaque étudiant construit son propre parcours de formation sur 5 ans.</p>
+          <p>Au cours des trois premières années post-bac, les étudiants choisissent leur
+          cursus parmi 7 cycles de formation différents.</p>
+          <p>Au cours de ces 3 années, les élèves acquièrent une solide formation dans les
+          sciences et les technologies numériques tout en approfondissant une spécialité
+          dès la première année après le baccalauréat. Plusieurs passerelles sont possibles
+          durant les 3 premières années si l’étudiant souhaite changer de cycle.</p>
+          <p>Après la deuxième année, il est possible de choisir une poursuite d’études sous
+          statut étudiant ou d’opter pour un contrat d’apprentissage.</p>
+          <p>Au niveau Master 1, qu’il soit sous statut étudiant ou apprenti, chaque élève
+          accède à un large choix de domaines professionnels sans concours ni critère de classement.</p>
+        </div>
+
+        <div class="block-image">
+          <img src="https://isen-ouest.fr/wp-content/uploads/2024/09/11/schema-des-etudes-isen-ouest-32.png"
+               alt="Schéma des études ISEN Ouest">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
 
   <!-- ===== Footer (snippet corrigé) ===== -->
   <footer class="site-footer">
