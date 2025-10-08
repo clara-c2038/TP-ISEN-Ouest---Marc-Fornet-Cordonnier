@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Formations post-bac</title>
   <style>
+    /* police globale */
     html { font-family: Open Sans, sans-serif; }
+    body { margin: 0; }
 
-    /* === header_simple (snippet du prof) === */
+    /* ===== header_simple (snippet) ===== */
     .header-isen { background:#fff; border-bottom:1px solid #e5e5e5; }
     .header-container {
       max-width:1400px; margin:0 auto; padding:0 20px;
@@ -23,20 +25,27 @@
     }
     .header-nav a:hover { text-decoration:underline; }
 
-    /* conteneur pour la suite (F23) */
+    /* conteneur principal (F23 viendra ici) */
     main { max-width:980px; margin:2rem auto; padding:0 1rem; }
+
+    /* ===== footer_simple (snippet) ===== */
+    .site-footer { background:#000; color:#fff; padding:40px 20px 20px; }
+    .footer-container { display:flex; max-width:1200px; margin:0 auto; gap:40px; flex-wrap:wrap; }
+    .footer-col-logo { flex:1; min-width:220px; display:flex; flex-direction:column; }
+    .footer-logo { height:100px; margin-bottom:15px; margin-top:30px; }
+    .footer-links-section { flex:3; display:flex; flex-direction:column; }
+    .footer-cities { font-size:40px; font-weight:700; text-align:left; margin:0; }
+    .footer-bottom { text-align:center; padding-top:15px; background:#fff; color:#000; font-size:14px; }
   </style>
 </head>
 <body>
 
-  <!-- Header simple -->
+  <!-- ===== Header ===== -->
   <header class="header-isen">
     <div class="header-container">
-      <!-- Logo -->
       <a href="/" class="header-logo">
         <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="ISEN Ouest">
       </a>
-      <!-- Navigation -->
       <nav class="header-nav">
         <ul>
           <li><a href="#">Liens à venir</a></li>
@@ -45,9 +54,28 @@
     </div>
   </header>
 
+  <!-- ===== Contenu de page (mettra F23) ===== -->
   <main>
-    <!-- (F23 : texte + image viendra ici) -->
+    <!-- F23 : texte + image viendront ici -->
   </main>
+
+  <!-- ===== Footer (snippet corrigé) ===== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <!-- Colonne logo -->
+      <div class="footer-col footer-col-logo">
+        <img
+          src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg"
+          alt="ISEN Ouest" class="footer-logo">
+      </div>
+
+      <!-- Titre -->
+      <div class="footer-links-section">
+        <p class="footer-cities">Texte à venir</p>
+      </div>
+    </div>
+  </footer>
+  <div class="footer-bottom">&copy;</div>
 
 </body>
 </html>
