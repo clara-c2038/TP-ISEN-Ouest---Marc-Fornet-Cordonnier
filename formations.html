@@ -1,4 +1,54 @@
 <!doctype html>
-<meta charset="utf-8">
-<title>Formations</title>
-<h1>Formations</h1>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formations</title>
+  <style>
+    html { font-family: Open Sans, sans-serif; }
+    body { margin: 0; }
+
+    /* === header_simple (snippet) === */
+    .header-isen { background:#fff; border-bottom:1px solid #e5e5e5; }
+    .header-container {
+      max-width:1400px; margin:0 auto; padding:0 20px;
+      display:flex; align-items:center; justify-content:space-between;
+    }
+    .header-logo img { height:45px; width:auto; }
+    .header-nav { background:#e30613; flex:1; margin-left:40px; }
+    .header-nav ul { list-style:none; display:flex; justify-content:space-around; margin:0; padding:0; }
+    .header-nav li { flex:1; text-align:center; }
+    .header-nav a {
+      display:block; padding:14px 10px; font-size:1.2em; font-weight:bold;
+      color:#fff; text-decoration:none; transition:background .2s;
+    }
+    .header-nav a:hover { text-decoration:underline; }
+
+    /* conteneur pour la suite (F27) */
+    main { max-width:1200px; margin:2rem auto; padding:0 1rem; }
+  </style>
+</head>
+<body>
+
+  <!-- Header simple -->
+  <header class="header-isen">
+    <div class="header-container">
+      <!-- Logo -->
+      <a href="/" class="header-logo">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="ISEN Ouest">
+      </a>
+      <!-- Navigation -->
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#">Liens à venir</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- (F27 : “Nos formations ingénieurs” + 3 images viendront ici) -->
+  </main>
+
+</body>
+</html>
